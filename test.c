@@ -85,25 +85,54 @@
 // }
 
 
-#include<stdio.h>
+// #include<stdio.h>
+// int main() {
+//   double first, second, temp;
+//   printf("Enter first number: ");
+//   scanf("%lf", &first);
+//   printf("Enter second number: ");
+//   scanf("%lf", &second);
+
+//   // value of first is assigned to temp
+//   temp = first;
+
+//   // value of second is assigned to first
+//   first = second;
+
+//   // value of temp (initial value of first) is assigned to second
+//   second = temp;
+
+//   // %.2lf displays number up to 2 decimal points
+//   printf("\nAfter swapping, first number = %.2lf\n", first);
+//   printf("After swapping, second number = %.2lf", second);
+//   return 0;
+// }
+
+// #include<stdio.h>
+// int main(void) {
+//   int x,y;
+//   x = 10;
+//   y = 20;
+
+//   x = x-y;
+//   y = x+y;
+//   x = y-x;
+  
+//   printf("x: %d\n" ,x);
+//   printf("y: %d" ,y);
+  
+//   }
+
+#include <stdio.h>
 int main() {
-  double first, second, temp;
-  printf("Enter first number: ");
-  scanf("%lf", &first);
-  printf("Enter second number: ");
-  scanf("%lf", &second);
-
-  // value of first is assigned to temp
-  temp = first;
-
-  // value of second is assigned to first
-  first = second;
-
-  // value of temp (initial value of first) is assigned to second
-  second = temp;
-
-  // %.2lf displays number up to 2 decimal points
-  printf("\nAfter swapping, first number = %.2lf\n", first);
-  printf("After swapping, second number = %.2lf", second);
-  return 0;
+   int i, j, rows;
+   printf("Enter the number of rows: ");
+   scanf("%d", &rows);
+   for (i = 1; i <= rows; ++i) {
+      for (j = 1; j <= i; ++j) {
+         printf("* ");
+      }
+      printf("\n");
+   }
+   return 0;
 }
