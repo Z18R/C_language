@@ -29,8 +29,8 @@
 #include <stdio.h>
 
 int main() {
-  char Firstname = 'J';
-  char lastName = 'a';
-  printf("%c %c", Firstname, lastName);
+  char Firstname = '';
+  char lastName = '';
+  printf("%c", Firstname + lastName);
   return 0;
 }
